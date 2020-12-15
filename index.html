@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Teste - Front End</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+</head>
+<body>
+	<div id="container">
+		<form id="form" name="post_dados" enctype="multipart/form-data">
+			<div class="box_dados">
+				<label>Nome:</label>
+				<input type="text" name="nome" id="nome" required="">
+			</div>
+			<div class="box_dados">
+				<label>Sobrenome:</label>
+				<input type="text" name="sobreNome" id="sobreNome"  required="">
+			</div>
+			<div class="box_dados">
+				<label>Genero:</label>
+				<nav id="genero">
+					<ul>
+						<div id="container_genero">
+							<li id="m"><p>Masc</p></li>|
+							<li id="f"><p>Fem</p></li>	
+						</div>
+					</ul>
+				</nav>
+			</div>
+			<div class="box_dados">
+				<label>Data de nascimento:</label>
+				<nav id="datas">
+					<ul>
+						<li>
+							<select id="dia">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+							</select>
+						</li>
+						<li>
+							<select id="mes">
+								<option>Janeiro</option>
+								<option>Fevereiro</option>
+								<option>Março</option>
+								<option>Abril</option>
+							</select>
+						</li>
+						<li>
+							<select id="ano">
+								<option>2000</option>
+								<option>2001</option>
+								<option>2002</option>
+								<option>2003</option>
+							</select>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="box_dados">
+				<label>E-Mail:</label>
+				<input type="email" name="email" id="email" required="">
+			</div>
+			<div class="box_dados">
+				<label>Confirme seu e-mail:</label>
+				<input type="email" name="email" id="email" required="" autocomplete="off">
+			</div>
+			<div class="box_dados">
+				<label>Telefone Celular:</label>
+				<input type="text" name="celular" id="celular" required="">
+			</div>
+			<div class="box_dados">
+				<label>Telefone Fixo (Opcional)</label>
+				<input type="text" name="tel" id="tel" required="">
+			</div>
+			<div class="box_dados">
+			<label>CPF: </label>
+			<input type="text" name="cpf" id="cpf" required="" maxlength="14" autocomplete="off">
+			</div>
+			<br>
+			<div class="box_dados">
+				<div id="label_cep">
+					<label>Cep:</label>
+				</div>
+				<div class="box_cep">
+					<input type="text" name="cep" id="cep" autocomplete="off" required="" maxlength="9">
+				</div>
+				<div class="box_cep">
+					<button id="btn_cep" type="button">Consultar <img id="load" src="images/loading.png"></button>		
+				</div>
+			</div>
+			<br>
+			<div id="resultado">
+				<div class="box_dados">
+					<label>Endereco</label>
+					<input type="text" name="endereco" id="endereco" required="" autocomplete="off">
+				</div>
+				<div class="box_dados">
+				<nav id="nav_end">
+					<label>Numero</label>
+					<label>Complemento</label>
+					<ul>	
+						<li>
+							<input type="text" name="numero" id="numero" required="">
+						</li>
+						<li>
+							<input type="text" name="complemento" id="complemento" required="">
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="box_dados">
+				<label>Bairro:</label>
+				<input type="text" name="bairro" id="bairro" autocomplete="off" required="">
+			</div>
+			<div class="box_dados">
+				<div id="box_cidade">
+					<label>Cidade:</label>
+					<input type="text" name="cidade" id="cidade" autocomplete="off" required="">
+				</div>
+				<div id="box_uf">
+					<label>UF:</label>
+					<input type="text" name="uf" id="uf" autocomplete="off" required="">
+				</div>
+			</div><br>
+			<div class="box_dados">
+				<label>Anexar arquivo (3MB)</label>
+				<input type="file" name="fileUpload[]" id="upload" multiple required="">
+				<a href="#" id="size"></a>
+			</div>
+			</div>
+			
+			<br>
+			<div class="box_dados">
+				 <input type="radio" name="sms" value="sms" id="sms" autocomplete="off"> Autorizo envio de mensagens
+			</div>
+			<div class="box_dados">
+				  <input type="radio" name="rules" value="rules" id="rules" autocomplete="off"> Estou de acordo com regulamento
+			</div>
+			<div class="box_dados">
+				 
+			</div>
+			<div class="box_dados">
+				  <button id="salvar" type="button">Salvar</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

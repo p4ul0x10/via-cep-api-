@@ -1,0 +1,183 @@
+*{ padding: 0px; margin: 0px; border: 0px; }
+
+body{
+	font-family: tahoma, sans-serif;
+	color: #b8b8b8;
+}
+#container{
+	width: 100%;
+}
+
+#form{
+	width: 650px;
+	margin: 5% auto;
+}
+
+.box_dados{
+	width: 300px;
+	display: inline-block;
+	margin: 0px 10px;
+	margin-bottom: 6%;
+}
+label{
+	color: #b8b8b8;
+}
+.box_dados input[type='text'], input[type='email'], input[type='file']{
+	width: 100%;
+	height: 46px;
+	background: #fcfcfc;
+	border-bottom: 1px solid #999;
+	color: #585858;
+}
+
+nav#genero ul {
+	list-style-type: none;
+}
+
+nav#genero ul #container_genero{
+	border: 1px solid #e4dfdf;
+	border-radius: 4px;
+}
+nav#genero ul li{
+	display: inline-block;
+	width: 48.1%;
+	height: 50px;
+	text-align: center;
+
+}
+
+nav#genero ul li p{
+	margin: 10px 0px;
+}
+
+nav#genero ul li:hover{
+	background: #fafafa;
+	cursor: pointer;
+}
+nav#datas ul{
+	list-style-type: none;
+}
+
+nav#datas ul li{
+	display: inline-block;
+}
+
+#dia{
+	width: 60px;
+	height: 30px;
+	color: #7d7d7d;
+}
+
+#mes{
+	width: 118px;
+	height: 30px;
+	color: #7d7d7d;
+}
+
+#ano{
+	width: 91px;
+	height: 30px;
+	color: #7d7d7d;
+}
+
+.box_cep{
+	display: block;
+	float: left;
+	width: 50%;
+}
+#cep{
+	width: 100%;
+}
+#btn_cep{
+	width: 80%;
+	height: 50px;
+	border: 1px solid #b8b8b8;
+	float: left;
+ 	background: linear-gradient( 0deg , #d8d8d8, #b8b8b8  ); 
+ 	color: #fff;
+ 	margin: 0px 20px;
+}
+
+#btn_cep:hover{
+	cursor: pointer;
+}
+
+#nav_end {
+
+}
+
+#nav_end ul{
+	list-style-type: none;
+}
+
+#nav_end ul li {
+	display: inline-block;
+}
+#numero{
+	width: 80px;
+	height: 50px;
+	float: left;
+}
+#complemento{
+	width: 195px;
+	height: 50px;
+	float: right;
+}
+
+#box_cidade{
+	width: 200px;
+	height: 50px;
+	float: left;
+}
+#box_uf{
+	width: 80px;
+	height: 50px;
+	float: right;
+}
+#cidade{
+	width: 100%;
+	height: 100%;
+}
+
+#uf{
+	width: 100%;
+	height: 100%;
+}
+
+#salvar{
+	width: 138px;
+	height: 50px;
+	color: #ffffff;
+	background: #2698f8;
+	float: right;
+	box-shadow: 4px 2px 6px rgba(217, 217, 217, 1);
+}
+
+#salvar:hover{
+	cursor: pointer;
+}
+
+#resultado{
+	display: none;
+}
+
+#size{
+	color: green;
+}
+#load{
+	display: none;
+}
+@media screen and (max-width: 480px){
+
+	body{
+		overflow-x: hidden;
+	}
+	#form{
+		width: 100%;
+		margin: 0px 5%;
+	}
+	.box_dados{
+		display: block;
+		margin: 10px 0px;
+	}
+}
